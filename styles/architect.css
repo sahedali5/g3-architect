@@ -186,3 +186,10 @@ main {
     }
 
 }
+
+/* tablet medium devices style */
+@media screen and (min-width:576px) and (max-width:970px) {
+    .team-features {
+        flex-direction: column;
+    }
+}
