@@ -21,6 +21,8 @@
 
 }
 
+
+
 /* header section style */
 header {
     background-color: rgba(255, 144, 14, 0.10);
@@ -83,48 +85,11 @@ nav a {
     margin-top: 1.25em;
 }
 
-/* responsive styles */
-/* mobile device */
-@media screen and (max-width:576px) {
-    header {
-        padding: 1.25em;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav>ul {
-        flex-direction: column;
-    }
-
-    .banner-content {
-        width: 100%;
-    }
-
-    .banner-title {
-        color: #131313;
-        font-size: 3em;
-        font-weight: bold;
-    }
-
-}
-
-/* tablet styles */
-@media screen and (min-width:576px) and (max-width:970px) {
-    header {
-        padding: 1.25em;
-    }
-
-    .banner-content {
-        width: 100%;
-    }
-}
 
 /* main style */
 main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 4.2em auto;
 }
 
 /* team features style  */
@@ -162,34 +127,179 @@ main {
 
 .content-description {
     color: #727272;
-    margin-bottom: 1.6em;
 
 }
 
-/* teams features media query */
+/* features love and enjoy section style */
+.hide {
+    display: none;
+}
+
+.features {
+    display: flex;
+    margin-top: 8.1em;
+    gap: 50px;
+
+}
+
+.container-title {
+    font-size: 2.9em;
+    color: #131313;
+    font-weight: bold;
+    border-left: 5px solid#FF900E;
+    padding-left: 1em;
+}
+
+.content-title {
+    color: #131313;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.container-description {
+    color: #727272;
+}
+
+.contents {
+    width: 36.6em;
+    height: 10.6em;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 1.8em;
+    margin-bottom: 1.25em;
+}
+
+.container-img img {
+    width: 708px;
+    height: 90%;
+    margin-left: 4em;
+}
+
+.btn-experience {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    padding: 40px;
+    width: 342px;
+    text-align: center;
+    position: relative;
+    bottom: 6.5em;
+}
+
+.btn-experience p {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.btn-experience h2 {
+    margin: 0;
+    font-size: 4em;
+}
+
+/* facts section */
+.facts-cards {
+    display: flex;
+    margin-top: 6.1em;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.facts-cards .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 1.8em;
+}
+
+.facts-cards .facts-title {
+    font-size: 2.8em;
+    color: #424242;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+}
+
+.facts-cards .facts-description {
+    font-size: 1.25em;
+    color: #727272;
+    margin: 5px;
+}
+
+
+/* responsive styles */
 /* mobile device */
 @media screen and (max-width:576px) {
+    header {
+        padding: 1.25em;
+    }
 
-
-    .team-features {
+    nav,
+    .team-features,
+    .features,
+    .facts-cards {
         flex-direction: column;
-        align-items: normal;
+    }
 
+    nav>ul {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .banner-title {
+        color: #131313;
+        font-size: 3em;
+        font-weight: bold;
     }
 
     .team-image-section {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .team-content {
         padding: 1em;
     }
 
+    .container-img img {
+        max-width: 300px;
+        margin-left: 1em;
+    }
+
+    .contents {
+        height: auto;
+        width: auto;
+    }
+
+    .btn-experience {
+        position: static;
+        width: auto;
+    }
+
+    .facts-cards {
+        gap: 1.24em;
+    }
+
 }
 
-/* tablet medium devices style */
+/* tablet styles */
 @media screen and (min-width:576px) and (max-width:970px) {
-    .team-features {
+    header {
+        padding: 1.25em;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .team-features,
+    .features {
         flex-direction: column;
+    }
+
+    .container-img img {
+        margin-left: 1em;
     }
 }
